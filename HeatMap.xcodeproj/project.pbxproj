@@ -13,6 +13,13 @@
 		2C32A88C211ADB8D00D8A4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C32A88B211ADB8D00D8A4D9 /* Assets.xcassets */; };
 		2C32A88F211ADB8D00D8A4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C32A88D211ADB8D00D8A4D9 /* LaunchScreen.storyboard */; };
 		2C32A892211ADB8D00D8A4D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C32A891211ADB8D00D8A4D9 /* main.m */; };
+		2C32A89C211ADC5300D8A4D9 /* HeatMapUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C32A89B211ADC5300D8A4D9 /* HeatMapUtility.m */; };
+		2C32A89D211ADF4400D8A4D9 /* Coordinates.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2C32A898211ADBAE00D8A4D9 /* Coordinates.csv */; };
+		2CFAF2CE211AFC76008F50B4 /* realtimelocation.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2CFAF2CD211AFC76008F50B4 /* realtimelocation.csv */; };
+		2CFAF2D2211AFD60008F50B4 /* VehicleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAF2D1211AFD60008F50B4 /* VehicleDataSource.m */; };
+		2CFAF2D5211AFE05008F50B4 /* VehicleUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAF2D4211AFE05008F50B4 /* VehicleUtility.m */; };
+		2CFAF2D9211B1889008F50B4 /* NSSet+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAF2D8211B1889008F50B4 /* NSSet+Random.m */; };
+		2CFAF2DD211B1AB9008F50B4 /* HMVehicleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAF2DC211B1AB9008F50B4 /* HMVehicleAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,18 @@
 		2C32A88E211ADB8D00D8A4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C32A890211ADB8D00D8A4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C32A891211ADB8D00D8A4D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C32A898211ADBAE00D8A4D9 /* Coordinates.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coordinates.csv; sourceTree = "<group>"; };
+		2C32A89A211ADC5300D8A4D9 /* HeatMapUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeatMapUtility.h; sourceTree = "<group>"; };
+		2C32A89B211ADC5300D8A4D9 /* HeatMapUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatMapUtility.m; sourceTree = "<group>"; };
+		2CFAF2CD211AFC76008F50B4 /* realtimelocation.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = realtimelocation.csv; sourceTree = "<group>"; };
+		2CFAF2D0211AFD60008F50B4 /* VehicleDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleDataSource.h; sourceTree = "<group>"; };
+		2CFAF2D1211AFD60008F50B4 /* VehicleDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleDataSource.m; sourceTree = "<group>"; };
+		2CFAF2D3211AFE05008F50B4 /* VehicleUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleUtility.h; sourceTree = "<group>"; };
+		2CFAF2D4211AFE05008F50B4 /* VehicleUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleUtility.m; sourceTree = "<group>"; };
+		2CFAF2D7211B1889008F50B4 /* NSSet+Random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSet+Random.h"; sourceTree = "<group>"; };
+		2CFAF2D8211B1889008F50B4 /* NSSet+Random.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Random.m"; sourceTree = "<group>"; };
+		2CFAF2DB211B1AB9008F50B4 /* HMVehicleAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMVehicleAnnotation.h; sourceTree = "<group>"; };
+		2CFAF2DC211B1AB9008F50B4 /* HMVehicleAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMVehicleAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +77,45 @@
 		2C32A881211ADB8B00D8A4D9 /* HeatMap */ = {
 			isa = PBXGroup;
 			children = (
+				2CFAF2DA211B1A97008F50B4 /* CustomView */,
+				2CFAF2CF211AFD06008F50B4 /* Data */,
 				2C32A882211ADB8B00D8A4D9 /* AppDelegate.h */,
 				2C32A883211ADB8B00D8A4D9 /* AppDelegate.m */,
 				2C32A885211ADB8B00D8A4D9 /* ViewController.h */,
 				2C32A886211ADB8B00D8A4D9 /* ViewController.m */,
+				2C32A89A211ADC5300D8A4D9 /* HeatMapUtility.h */,
+				2C32A89B211ADC5300D8A4D9 /* HeatMapUtility.m */,
+				2CFAF2D3211AFE05008F50B4 /* VehicleUtility.h */,
+				2CFAF2D4211AFE05008F50B4 /* VehicleUtility.m */,
 				2C32A888211ADB8B00D8A4D9 /* Main.storyboard */,
 				2C32A88B211ADB8D00D8A4D9 /* Assets.xcassets */,
 				2C32A88D211ADB8D00D8A4D9 /* LaunchScreen.storyboard */,
 				2C32A890211ADB8D00D8A4D9 /* Info.plist */,
 				2C32A891211ADB8D00D8A4D9 /* main.m */,
+				2CFAF2D7211B1889008F50B4 /* NSSet+Random.h */,
+				2CFAF2D8211B1889008F50B4 /* NSSet+Random.m */,
 			);
 			path = HeatMap;
+			sourceTree = "<group>";
+		};
+		2CFAF2CF211AFD06008F50B4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2C32A898211ADBAE00D8A4D9 /* Coordinates.csv */,
+				2CFAF2CD211AFC76008F50B4 /* realtimelocation.csv */,
+				2CFAF2D0211AFD60008F50B4 /* VehicleDataSource.h */,
+				2CFAF2D1211AFD60008F50B4 /* VehicleDataSource.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2CFAF2DA211B1A97008F50B4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2CFAF2DB211B1AB9008F50B4 /* HMVehicleAnnotation.h */,
+				2CFAF2DC211B1AB9008F50B4 /* HMVehicleAnnotation.m */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C32A89D211ADF4400D8A4D9 /* Coordinates.csv in Resources */,
+				2CFAF2CE211AFC76008F50B4 /* realtimelocation.csv in Resources */,
 				2C32A88F211ADB8D00D8A4D9 /* LaunchScreen.storyboard in Resources */,
 				2C32A88C211ADB8D00D8A4D9 /* Assets.xcassets in Resources */,
 				2C32A88A211ADB8B00D8A4D9 /* Main.storyboard in Resources */,
@@ -141,9 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFAF2DD211B1AB9008F50B4 /* HMVehicleAnnotation.m in Sources */,
 				2C32A887211ADB8B00D8A4D9 /* ViewController.m in Sources */,
+				2CFAF2D2211AFD60008F50B4 /* VehicleDataSource.m in Sources */,
 				2C32A892211ADB8D00D8A4D9 /* main.m in Sources */,
+				2CFAF2D5211AFE05008F50B4 /* VehicleUtility.m in Sources */,
 				2C32A884211ADB8B00D8A4D9 /* AppDelegate.m in Sources */,
+				2CFAF2D9211B1889008F50B4 /* NSSet+Random.m in Sources */,
+				2C32A89C211ADC5300D8A4D9 /* HeatMapUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
